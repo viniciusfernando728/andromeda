@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Game of Squids';
+    src: url('fontes/GameOfSquids.ttf') format('truetype'), url('fontes/GameOfSquids.otf') format('opentype');
+
+    font-family: 'Space';
+    src: url('fontes/space\ age.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Game of Squids';
+    src: url('fontes/GameOfSquids.ttf') format('truetype'), url('fontes/GameOfSquids.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url('fontes/Gobold\ Light.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: relative;
+    color: white;
+    height: 500px;
+    text-align: center;
+    background-color: darkblue;
+}
+
+#conteudo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+header h1 {
+    font-size: 8vw;
+    font-family: 'Space';
+    padding: 20px;
+}
+
+header p {
+    font-family: 'Gobold';
+    font-weight: lighter;
+    font-size: 2vw;
+    color: rgba(255, 255, 255, 0.888);
+}
+
+article {
+    height: 600px;
+    background-color: gray;
+}
+
+div.contain {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+
+div img {
+    width: 350px;
+}
