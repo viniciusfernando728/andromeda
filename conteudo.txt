@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andromeda</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div id="titulo">
-            <h1>ANDROMEDA</h1>
-            <p>O Portal para Além das Estrelas</p>
-        </div>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="apoiadores.html">Apoiadores</a>
-    </nav>
-    <main>
-        <article>
-            <p>Você já parou para pensar que o universo está literalmente ao alcance das nossas mãos?</p>
-            <p>O conhecimento sobre o espaço não é uma fronteira distante, mas uma jornada acessível que todos podemos embarcar.</p>
-            <img src="imagens/universo_nas_maos.png" alt="Universo nas Mãos">
-        </article>
-        <article>
-            <h1 class="paralax">O Cosmos em Evolução</h1>
+<article>
+            <h1>O Cosmos em Evolução</h1>
             <p>Imagine um universo em constante transformação, onde cada estrela que nasce, cada galáxia que colide, e cada buraco negro que se forma, molda o tecido do espaço e do tempo.</p>            
         </article>
         <article>
@@ -33,15 +7,12 @@
             <p>A humanidade está testemunhando uma era de exploração espacial sem precedentes. Embarcamos em missões audaciosas que nos levam além dos limites conhecidos do nosso sistema solar e nos aproximam das estrelas distantes.</p>
 
             <p>Agências espaciais de todo o mundo, incluindo a NASA, ESA, SpaceX e outras, estão unindo forças para lançar sondas, telescópios espaciais e expedições tripuladas, impulsionando-nos para novos horizontes. Desde a exploração da lua até a busca por vida em Marte, cada missão desvenda novos mistérios cósmicos e inspira a imaginação de milhões.</p>
-            <img src="imagens/exploracao.png" alt="Exploração Espacial">
         </article>
         <article>
             <h1>Inspiração para o Futuro</h1>
             <p>Nossa exploração do espaço não é apenas uma busca pelo conhecimento, mas também uma inspiração para o futuro.</p>
         </article>
-    </main>
-    <footer>
 
-    </footer>
-</body>
-</html>
+
+
+        

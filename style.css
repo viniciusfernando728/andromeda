@@ -1,16 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Game of Squids';
-    src: url('fontes/GameOfSquids.ttf') format('truetype'), url('fontes/GameOfSquids.otf') format('opentype');
-
     font-family: 'Space';
     src: url('fontes/space\ age.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Game of Squids';
-    src: url('fontes/GameOfSquids.ttf') format('truetype'), url('fontes/GameOfSquids.otf') format('opentype');
 }
 
 @font-face {
@@ -18,9 +10,17 @@
     src: url('fontes/Gobold\ Light.otf') format('opentype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+:root {
+    --fonte01: 'Space', 'Times New Roman', 'Times', serif;
+    --fonte02: 'Gobold', Arial, Helvetica, sans-serif;
+    --fonte03: 'Catamaran', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     background-color: darkblue;
 }
 
-#conteudo{
+#titulo{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -41,29 +41,39 @@ header {
 
 header h1 {
     font-size: 8vw;
-    font-family: 'Space';
+    font-family: var(--fonte01);
     padding: 20px;
 }
 
 header p {
-    font-family: 'Gobold';
+    font-family: var(--fonte02);
     font-weight: lighter;
     font-size: 2vw;
     color: rgba(255, 255, 255, 0.888);
 }
 
+nav {
+    margin: 10px 10px 80px 10px;
+}
+
 article {
-    height: 600px;
-    background-color: gray;
+    max-width: 1000px;
+    background-color: white;
+    padding: 10px 20px 120px;
+    margin: auto;
 }
 
-div.contain {
-    display: inline-block;
+article p {
+    font-family: var(--fonte03);
+    font-weight: 900;
+    font-size: 4vh;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+article img {
+    display: block;
+    margin: 100px auto 0px;
     width: 400px;
-    height: 400px;
-    background-color: yellow;
-}
-
-div img {
-    width: 350px;
+    
 }
