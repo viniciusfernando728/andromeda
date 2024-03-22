@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andromeda</title>
+    <title>Andrômeda</title>
     <link rel="stylesheet" href="style.css">
     <style>
         article {
             background-color: white;
-            padding: 18vh 11vw;
+            padding-top: 8vh;
             margin: auto;
         }
 
-        article.parallax {
+        article.parallax01 {
+            padding: 0vh 0vw;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.60);
+        }
+
+        article.parallax02 {
             padding: 0vh 0vw;
             box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.60);
         }
@@ -27,17 +32,31 @@
             background-size: cover;
         }
 
-        article.parallax p {
+        article.parallax01 p {
+            padding: 35vh 14vw;
             font-size: 4vh;
             color: white;
+            background-color: rgba(0, 0, 0, 0.452);
         }
 
-        div.caixa {
+        article.parallax02 p.par01 {
+            padding: 30vh 14vw 8vh;
+            font-size: 4vh;
+            color: white;
             background-color: rgba(0, 0, 0, 0.452);
-            padding: 30vh 11vw;
+        }
+
+        article.parallax02 p.par02 {
+            padding: 8vh 14vw 30vh;
+            font-size: 4vh;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.452);
         }
 
         article p {
+            padding-top: 50px;
+            padding-left: 15vw;
+            padding-right: 15vw;
             padding-bottom: 50px;
             font-family: var(--fonte03);
             font-weight: 900;
@@ -47,13 +66,15 @@
 
         .imagem {
             display: block;
+            padding-bottom: 25vh;
             margin: 60px auto 0px;
             width: 350px;  
         }
 
-        img {
+        picture > img {
             display: block;
-            margin: auto;
+            margin: 60px auto 0px;
+            padding-bottom: 25vh;
         }
 
     </style>
@@ -61,14 +82,14 @@
 <body>
     <header>
         <div id="titulo">
-            <h1>ANDROMEDA</h1>
+            <h1>ANDRÔMEDA</h1>
             <p>O Portal para Além das Estrelas</p>
         </div>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="apoiadores.html">Apoiadores</a>
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="noticias.html">Notícias</a>
+        <a class="menu" href="apoiadores.html">Apoiadores</a>
     </nav>
     <main>
         <article>
@@ -76,7 +97,7 @@
             <p>O conhecimento sobre o espaço não é uma fronteira distante, mas uma jornada acessível que todos podemos embarcar.</p>
             <img class="imagem" src="imagens/universo_nas_maos.png" alt="Universo nas Mãos">
         </article>
-        <article class="parallax" id="img01">
+        <article class="parallax01" id="img01">
             <div class="caixa">
                 <p>Imagine um universo em constante transformação, onde cada estrela que nasce, cada galáxia que colide, e cada buraco negro que se forma, molda o tecido do espaço e do tempo.</p>
             </div>            
@@ -91,21 +112,18 @@
                 <img src="imagens/exploracao-g.jpg" alt="Exploração Espacial">
             </picture>
         </article>
-        <article class="parallax" id="img02">
-            <div class="caixa">
-                <p>Nossa exploração do espaço não é apenas uma busca pelo conhecimento, mas também uma inspiração para o futuro.</p>
-                <p>Ainda há muito o que descobrir!</p>
-            </div>
+        <article class="parallax02" id="img02">
+            <p class="par01">Nossa exploração do espaço não é apenas uma busca pelo conhecimento, mas também uma inspiração para o futuro.</p>
+            <p class="par02">Ainda há muito o que descobrir!</p>
         </article>
     </main>
     <footer>
         <p>Site criado por Vinícius Fernando.</p>
     
-        <div class="redes">
-            <a href="https://www.facebook.com/vinicius.fernando007/" target="_blank" rel="external" class="redes"><img src="imagens/icones/icone-facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/fernand_4572/?hl=pt-br" target="_blank" rel="external" class="redes"><img src="imagens/icones/icone-instagram.png" alt="Instagram"></a>
-            <a href="https://github.com/viniciusfernando728" target="_blank" rel="external" class="redes"><img src="imagens/icones/icone-github.png" alt="GitHub"></a>
-        </div>
+        <p class="redes">
+            <a href="https://www.facebook.com/vinicius.fernando007/" target="_blank" rel="external"><img src="imagens/icones/icone-facebook.png" alt="Facebook"></a><a href="https://www.instagram.com/fernand_4572/?hl=pt-br" target="_blank" rel="external"><img src="imagens/icones/icone-instagram.png" alt="Instagram"></a>
+            <a href="https://github.com/viniciusfernando728" target="_blank" rel="external"><img src="imagens/icones/icone-github.png" alt="GitHub"></a>
+        </p>
 
         <p class="direitos">Copyright &copy; 2024 | Todos os direitos reservados. Proibida a reprodução comercial sem autorização.</p>
     </footer>

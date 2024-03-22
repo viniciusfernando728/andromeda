@@ -3,55 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andromeda</title>
+    <title>Andrômeda</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --fonte01: 'Space', 'Times New Roman', 'Times', serif;
+            --fonte02: 'Gobold', Arial, Helvetica, sans-serif;
+            --fonte03: 'Catamaran', Arial, Helvetica, sans-serif;
+
+            --cor01: #0B132B;
+            --cor02: #0047AB;
+            --cor03: #D36135;
+        }
+
+        main {
+            padding: 80px 20px 20px;
+        }
+
+        main h1 {
+            color: var(--cor01);
+            text-align: center;
+            font-family: var(--fonte02);
+            font-size: 2em;
+            font-weight: bold;
+            max-width: 1200px;
+            padding-bottom: 40px;
+            border-bottom: 5px solid var(--cor01);
+            margin: auto;
+        }
+
+        article h2 {
+            font-family: var(--fonte03);
+            font-size: 1.4em;
+            font-weight: 800;
+            border-left: 5px solid var(--cor03);
+            max-width: 1000px;
+            margin: 0px auto;
+            padding: 15px 10px 0px;
+        }
+
+        article h2 > a {
+            color: var(--cor02);
+            text-decoration: none;
+        }
+
+        article h2 > a:hover {
+            text-decoration: underline;
+        }
+
+        article p {
+            font-size: 1em;
+            border-left: 5px solid var(--cor03);
+            max-width: 1000px;
+            margin: 0px auto 20px;
+            padding: 10px 10px 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>ANDRÔMEDA</h1>
-        <p>O Portal para Além das Estrelas!</p>
+        <div id="titulo">
+            <h1>ANDRÔMEDA</h1>
+            <p>O Portal para Além das Estrelas!</p>
+        </div>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="apoiadores.html">Apoiadores</a>
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="noticias.html">Notícias</a>
+        <a class="menu" href="apoiadores.html">Apoiadores</a>
     </nav>
     <main>
         <h1>As principais notícias da semana</h1>
         <article>
             <h2><a href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2024/03/e-possivel-que-materia-escura-nao-exista-no-universo-estudo-diz-que-sim.ghtml" target="_blank" rel="external">É possível que matéria escura não exista no Universo? Estudo diz que sim!</a></h2>
-            <div><img src="" alt=""></div>
-            <div><p>De acordo com teorias bem aceitas entre a comunidade científica, cerca de 27% do Universo seria composto por matéria escura.</p></div>
+            <p>De acordo com teorias bem aceitas entre a comunidade científica, cerca de 27% do Universo seria composto por matéria escura. Agora, um novo estudo sugere que, na verdade, o espaço não precisa de matéria escura e, mais do que isso, pode ser que ela nem exista.</p>
         </article>
         <article>
             <h2><a href="https://www.bbc.com/portuguese/articles/ce9dng07pzro" target="_blank" rel="external">Telescópio James Webb: a descoberta de 'planetas' do tamanho de Júpiter flutuando em pares no espaço</a></h2>
-            <div></div>
-            <div><p>Descoberta de objetos espaciais similares a planetas flutuando em pares gerou surpresa entre astrônomos.</p></div>
+            <p>Descoberta de objetos espaciais similares a planetas flutuando em pares gerou surpresa entre astrônomos. Foram observados cerca de 40 pares desses objetos em um estudo muito detalhado da famosa nebulosa de Orion.</p>
         </article>
         <article>
             <h2><a href="https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=sinais-vida-luas-geladas-coletados-espaco&id=010130231207" target="_blank" rel="external">Sinais de vida em luas geladas podem ser coletados do espaço</a></h2>
-            <div></div>
-            <div><p>É possível fazer uma boa avaliação da existência de vida nas plumas de água ejetadas por luas como Encélado e Europa sem precisar pousar.</p></div>
+            <p>Astrofísicos demonstraram que é possível fazer uma boa avaliação da existência de vida nas plumas de água ejetadas pela lua Encélado, de Saturno, sem precisar pousar. A lua é apontada por alguns cientistas como o provável abrigo da vida extraterrestre mais próxima da Terra porque ela parece abrigar um oceano global por baixo de suas extensas camadas de gelo.</p>
         </article>
         <article>
             <h2><a href="https://aventurasnahistoria.uol.com.br/noticias/historia-hoje/turismo-espacial-descubra-quanto-custa-um-jantar-de-luxo-no-espaco.phtml" target="_blank" rel="external">Turismo espacial: Descubra quanto custa um jantar de luxo no espaço</a></h2>
-            <div></div>
-            <div><p>A SpaceVIP, uma empresa de turismo espacial, está oferecendo uma experiência gastronômica refinada para aqueles capazes de desembolsar um...</p></div>
+            <p>A SpaceVIP, uma empresa de turismo espacial, está oferecendo uma experiência gastronômica refinada para aqueles capazes de desembolsar um valor altíssimo: a possibilidade de desfrutar um jantar de luxo com um chef de cozinha aclamado em meio ao espaço sideral. </p>
         </article>
         <article>
             <h2><a href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2024/02/japao-lanca-a-1a-espaconave-que-ira-detectar-lixo-no-espaco.ghtml" target="_blank" rel="external">Japão lança a 1ª espaçonave que irá detectar lixo no espaço</a></h2>
-            <div></div>
-            <div><p>Nas últimas décadas, a discussão sobre lixo espacial tem aumentado. São restos de satélites e foguetes acumulados no Universo que não têm um...</p></div>
+            <p>Nas últimas décadas, a discussão sobre lixo espacial tem aumentado. São restos de satélites e foguetes acumulados no Universo que não têm um destino específico. Para tentar solucionar esse problema, o Japão lançou pela primeira vez no mundo uma espaçonave para identificar resíduos do espaço.</p>
+        </article>
+        <article>
+            <h2><a href="https://istoe.com.br/nasa-manda-mensagem-ao-cosmos-em-busca-de-contatos-extraterrestres/" target="_blank" rel="external">Nasa manda mensagem ao cosmos em busca de contatos extraterrestres</a></h2>
+            <p>A Nasa está prestes a promover em uma jornada épica, enviando poema em diversos idiomas para além das estrelas</p>
+        </article>
+        <article>
+            <h2><a href="https://canaltech.com.br/espaco/destaque-da-nasa-fobos-lua-de-marte-e-a-foto-astronomica-do-dia-283281/" target="_blank" rel="external">Destaque da NASA: Fobos, lua de Marte, é a foto astronômica do dia</a></h2>
+            <p>Fobos, uma das luas de Marte, está na foto destacada pela NASA nesta sexta-feira (22). A imagem é uma composição de registros capturados pelo telescópio espacial Hubble em 2016, quando o Planeta Vermelho chegou à sua aproximação máxima da Terra. </p>
+        </article>
+        <article>
+            <h2><a href="https://www.terra.com.br/byte/nasa-nao-tira-os-olhos-da-mancha-solar-potencialmente-perigosa-por-que,e2d9f71fc077ecaab8cca7aa22fb04cam30pah8k.html" target="_blank" rel="external">Nasa não tira os olhos da mancha solar potencialmente perigosa: por quê?</a></h2>
+            <p>Nesta quarta-feira (20), a mancha solar sofreu uma erupção e causou blecautes em sinais de rádio na Terra, especialmente redor do Oceano Índico.</p>
+        </article>
+        <article>
+            <h2><a href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2024/03/asteroide-atingido-em-missao-da-nasa-teve-sua-orbita-e-forma-alteradas.ghtml" target="_blank" rel="external">Asteroide atingido em missão da Nasa teve sua órbita e forma alteradas</a></h2>
+            <p>Espaçonave Dart diminuiu a distância e o tempo da órbita de Dimorphos em aproximadamente 37 metros e 33 minutos, além de ter deixado o objeto mais alongado.</p>
+        </article>
+        <article>
+            <h2><a href="https://gizmodo.uol.com.br/video-spacex-mostra-como-astronautas-fogem-em-caso-de-falha-de-foguete/" target="_blank" rel="external">Vídeo: SpaceX mostra como astronautas fogem em caso de falha de foguete</a></h2>
+            <p>A SpaceX, empresa de exploração espacial do bilionário Elon Musk, mostrou o sistema de escape de emergência para astronautas de seus foguetes.</p>
+        </article>
+        <article>
+            <h2><a href="https://olhardigital.com.br/2024/03/19/ciencia-e-espaco/starship-pode-fazer-voos-interestelares-algum-dia-diz-elon-musk/" target="_blank" rel="external">Starship pode fazer voos interestelares algum dia, diz Elon Musk</a></h2>
+            <p>A nave Starship da SpaceX realizou seu terceiro voo de teste na semana passada. No entanto, a espaçonave planejada para levar a humanidade para a Lua e Marte não é nem de longe o plano mais ambicioso da empresa.</p>
         </article>
     </main>
     <footer>
         <p>Site criado por Vinícius Fernando.</p>
     
-        <div class="redes">
-            <a href="https://www.facebook.com/vinicius.fernando007/" target="_blank" rel="external" class="redes"><img src="imagens/icones/icone-facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/fernand_4572/?hl=pt-br" target="_blank" rel="external" class="redes"><img src="imagens/icones/icone-instagram.png" alt="Instagram"></a>
-            <a href="https://github.com/viniciusfernando728" target="_blank" rel="external" class="redes"><img src="imagens/icones/icone-github.png" alt="GitHub"></a>
-        </div>
+        <p class="redes">
+            <a href="https://www.facebook.com/vinicius.fernando007/" target="_blank" rel="external"><img src="imagens/icones/icone-facebook.png" alt="Facebook"></a><a href="https://www.instagram.com/fernand_4572/?hl=pt-br" target="_blank" rel="external"><img src="imagens/icones/icone-instagram.png" alt="Instagram"></a>
+            <a href="https://github.com/viniciusfernando728" target="_blank" rel="external"><img src="imagens/icones/icone-github.png" alt="GitHub"></a>
+        </p>
 
         <p class="direitos">Copyright &copy; 2024 | Todos os direitos reservados. Proibida a reprodução comercial sem autorização.</p>
     </footer>
