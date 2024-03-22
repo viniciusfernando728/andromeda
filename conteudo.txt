@@ -1,17 +1,5 @@
-<article>
-            <h1>O Cosmos em Evolução</h1>
-            <p>Imagine um universo em constante transformação, onde cada estrela que nasce, cada galáxia que colide, e cada buraco negro que se forma, molda o tecido do espaço e do tempo.</p>            
-        </article>
-        <article>
-            <h1>A Exploração Espacial Hoje</h1>
-            <p>A humanidade está testemunhando uma era de exploração espacial sem precedentes. Embarcamos em missões audaciosas que nos levam além dos limites conhecidos do nosso sistema solar e nos aproximam das estrelas distantes.</p>
-
-            <p>Agências espaciais de todo o mundo, incluindo a NASA, ESA, SpaceX e outras, estão unindo forças para lançar sondas, telescópios espaciais e expedições tripuladas, impulsionando-nos para novos horizontes. Desde a exploração da lua até a busca por vida em Marte, cada missão desvenda novos mistérios cósmicos e inspira a imaginação de milhões.</p>
-        </article>
-        <article>
-            <h1>Inspiração para o Futuro</h1>
-            <p>Nossa exploração do espaço não é apenas uma busca pelo conhecimento, mas também uma inspiração para o futuro.</p>
-        </article>
+<h1>Inspiração para o Futuro</h1>
+            <p>Nossa exploração do espaço não é apenas uma busca pelo conhecimento, mas também uma inspiração para o futuro. Ainda há muito o que descobrir!</p>
 
 
 
