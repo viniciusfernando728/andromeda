@@ -6,31 +6,94 @@
     <title>Andrômeda</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        :root {
+            --fonte01: 'Space', 'Times New Roman', 'Times', serif;
+            --fonte02: 'Gobold', Arial, Helvetica, sans-serif;
+            --fonte03: 'Catamaran', Arial, Helvetica, sans-serif;
+
+            --cor01: #0B132B;
+            --cor02: #2727FF;
+            --cor03: #0047AB;
+            --cor04: #D36135;
+        }
+
         table {
             padding: 20px;
             border: 1px solid black;
             border-collapse: collapse;
+            font-size: 1.2em;
+            margin: auto;
+        }
+
+        caption {
+            color: var(--cor03);
+            font-family: var(--fonte03);
+            font-weight: bold;
+            font-size: 2em;
+            padding-bottom: 40px;
+        }
+
+        thead th {
+            text-align: center;
+            background-color: var(--cor03);
+            color: white;
+
+            position: sticky;
+            top: -1px;           
         }
 
         th {
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: left;
             vertical-align: middle;
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: left;
             vertical-align: middle;
         }
+        
+        td > a {
+            padding-right: 10px;
+        }
+
+        td > a > img {
+            width: 20px;
+            
+        }
+
+        col.nome {
+            width: 350px;
+        }
+
+        col.data {
+            width: 200px;
+        }
+
+        col.redes {
+            width: 200px;
+        }
+
+        main > p {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: var(--fonte03);
+            color: var(--cor03);
+            padding: 60px;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>ANDRÔMEDA</h1>
-        <p>O Portal para Além das Estrelas!</p>
+        <div id="titulo">
+            <h1>ANDRÔMEDA</h1>
+            <p>O Portal para Além das Estrelas!</p>
+        </div>
     </header>
     <nav>
         <a class="menu" href="index.html">Home</a>
@@ -38,218 +101,377 @@
         <a class="menu" href="apoiadores.html">Apoiadores</a>
     </nav>
     <main>
-        <table>
-            <caption>Nossos Apoiadores!</caption>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Apoiador Desde</th>
-                    <th>Redes Sociais</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Ana Silva</th>
-                    <td>10/02/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Pedro Costa</th>
-                    <td>03/03/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Sofia Santos</th>
-                    <td>28/03/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>João Oliveira</th>
-                    <td>12/04/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Maria Pereira</th>
-                    <td>05/05/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>André Almeida</th>
-                    <td>01/06/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Carolina Sousa</th>
-                    <td>21/06/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Tiago Fernandes</th>
-                    <td>12/07/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Inês Martins</th>
-                    <td>06/08/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Diogo Gomes</th>
-                    <td>25/08/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Mariana Cardoso</th>
-                    <td>15/09/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Ricardo Ramos</th>
-                    <td>01/10/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Beatriz Moreira</th>
-                    <td>23/10/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Francisco Rodrigues</th>
-                    <td>14/11/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Laura Carvalho</th>
-                    <td>06/12/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Miguel Ferreira</th>
-                    <td>28/12/2022</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Catarina Lopes</th>
-                    <td>19/01/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Bruno Gonçalves</th>
-                    <td>10/02/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Diana Dias</th>
-                    <td>03/03/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Tiago Pereira</th>
-                    <td>28/03/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Andréia Lima</th>
-                    <td>20/04/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Marcelo Barbosa</th>
-                    <td>10/05/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Juliana Ribeiro</th>
-                    <td>03/06/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Bruna Rocha</th>
-                    <td>28/06/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Lucas Xavier</th>
-                    <td>20/07/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Luana Miranda</th>
-                    <td>13/08/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Gustavo Carvalho</th>
-                    <td>06/09/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Amanda Sousa</th>
-                    <td>27/09/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Felipe Cardoso</th>
-                    <td>18/10/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Vitória Gonçalves</th>
-                    <td>08/11/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Diego Rodrigues</th>
-                    <td>01/12/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Larissa Ferreira</th>
-                    <td>23/12/2023</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Matheus Almeida</th>
-                    <td>14/01/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Isabela Silva</th>
-                    <td>30/01/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Gabriel Martins</th>
-                    <td>05/02/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Rafaela Costa</th>
-                    <td>28/02/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Renata Santos</th>
-                    <td>04/03/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Guilherme Pereira</th>
-                    <td>12/03/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Mariana Oliveira</th>
-                    <td>16/03/2024</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <th>Lucas Mendes</th>
-                    <td>21/03/2024</td>
-                    <td>#</td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="container">
+            <table>
+                <colgroup>
+                    <col class="nome">
+                    <col class="data">
+                    <col class="redes">
+                </colgroup>
+                <caption>Nossos Apoiadores!</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Apoiador Desde</th>
+                        <th>Redes Sociais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Ana Silva</th>
+                        <td>10/02/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Pedro Costa</th>
+                        <td>03/03/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sofia Santos</th>
+                        <td>28/03/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>João Oliveira</th>
+                        <td>12/04/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Maria Pereira</th>
+                        <td>05/05/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>André Almeida</th>
+                        <td>01/06/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Carolina Sousa</th>
+                        <td>21/06/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tiago Fernandes</th>
+                        <td>12/07/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Inês Martins</th>
+                        <td>06/08/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Diogo Gomes</th>
+                        <td>25/08/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mariana Cardoso</th>
+                        <td>15/09/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Ricardo Ramos</th>
+                        <td>01/10/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Beatriz Moreira</th>
+                        <td>23/10/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Francisco Rodrigues</th>
+                        <td>14/11/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Laura Carvalho</th>
+                        <td>06/12/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Miguel Ferreira</th>
+                        <td>28/12/2022</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Catarina Lopes</th>
+                        <td>19/01/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Bruno Gonçalves</th>
+                        <td>10/02/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Diana Dias</th>
+                        <td>03/03/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tiago Pereira</th>
+                        <td>28/03/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Andréia Lima</th>
+                        <td>20/04/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Marcelo Barbosa</th>
+                        <td>10/05/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Juliana Ribeiro</th>
+                        <td>03/06/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Bruna Rocha</th>
+                        <td>28/06/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Lucas Xavier</th>
+                        <td>20/07/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Luana Miranda</th>
+                        <td>13/08/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Gustavo Carvalho</th>
+                        <td>06/09/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Amanda Sousa</th>
+                        <td>27/09/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Felipe Cardoso</th>
+                        <td>18/10/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Vitória Gonçalves</th>
+                        <td>08/11/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Diego Rodrigues</th>
+                        <td>01/12/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Larissa Ferreira</th>
+                        <td>23/12/2023</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Matheus Almeida</th>
+                        <td>14/01/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Isabela Silva</th>
+                        <td>30/01/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Gabriel Martins</th>
+                        <td>05/02/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Rafaela Costa</th>
+                        <td>28/02/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Renata Santos</th>
+                        <td>04/03/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Guilherme Pereira</th>
+                        <td>12/03/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mariana Oliveira</th>
+                        <td>16/03/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Lucas Mendes</th>
+                        <td>21/03/2024</td>
+                        <td>
+                            <a href="#"><img src="imagens/icones/icone-facebook-azul.png" alt="Facebook"></a>
+                            <a href="#"><img src="imagens/icones/icone-instagram-azul.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/icones/icone-github-azul.png" alt="GitHub"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>O nosso muito obrigado a todos os apoiadores!</p>
     </main>
     <footer>
         <p>Site criado por Vinícius Fernando.</p>
