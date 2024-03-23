@@ -29,7 +29,7 @@
 
 body {
     max-width: 100%;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 header {
@@ -37,7 +37,8 @@ header {
     color: white;
     height: 500px;
     text-align: center;
-    background-color: darkblue;
+    background: var(--cor01) url('imagens/header.jpg') center bottom no-repeat;
+    background-size: cover;
 }
 
 #titulo{
@@ -86,7 +87,7 @@ main {
 }
 
 footer {
-    background-color: black;
+    background-color: var(--cor01);
     color: white;
 }
 
@@ -105,13 +106,20 @@ footer > p.redes > a {
     padding: 20px;
 }
 
-footer > p.direitos {
+footer > p.direitos01 {
     font-weight: normal;
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.455);
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 4px;
 }
 
+footer > p.direitos02 {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.455);
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
 
 
